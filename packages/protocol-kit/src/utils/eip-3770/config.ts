@@ -205,6 +205,7 @@ export const networks: NetworkShortName[] = [
   { chainId: 8822n, shortName: 'iotaevm' },
   { chainId: 9000n, shortName: 'evmos-testnet' },
   { chainId: 9001n, shortName: 'evmos' },
+  { chainId: 9369n, shortName: 'z' },
   { chainId: 9700n, shortName: 'MainnetDev' },
   { chainId: 9728n, shortName: 'boba-testnet' },
   { chainId: 10000n, shortName: 'smartbch' },
