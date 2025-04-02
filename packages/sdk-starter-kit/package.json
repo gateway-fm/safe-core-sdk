@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/safe-global/safe-core-sdk.git"
+    "url": "git+https://github.com/gateway-fm/safe-core-sdk.git"
   },
   "author": "Safe (https://safe.global)",
   "license": "MIT",
