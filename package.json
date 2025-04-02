@@ -39,6 +39,14 @@
     "tsc-alias": "^1.8.8",
     "typescript": "^5.6.3"
   },
+  "resolutions": {
+    "@safe-global/protocol-kit": "npm:@gateway-fm/protocol-kit@latest",
+    "@safe-global/api-kit": "npm:@gateway-fm/api-kit@latest",
+    "@safe-global/relay-kit": "npm:@gateway-fm/relay-kit@latest",
+    "@safe-global/sdk-starter-kit": "npm:@gateway-fm/sdk-starter-kit@latest",
+    "@safe-global/testing-kit": "npm:@gateway-fm/testing-kit@latest",
+    "@safe-global/types-kit": "npm:@gateway-fm/types-kit@latest"
+  },
   "lint-staged": {
     "./packages/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
