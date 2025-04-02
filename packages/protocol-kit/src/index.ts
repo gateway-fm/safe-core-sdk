@@ -37,7 +37,10 @@ import {
   estimateSafeDeploymentGas,
   extractPasskeyData,
   validateEthereumAddress,
-  validateEip3770Address
+  validateEip3770Address,
+  decodeMultiSendData,
+  generatePreValidatedSignature,
+  isSafeMultisigTransactionResponse
 } from './utils'
 import EthSafeTransaction from './utils/transactions/SafeTransaction'
 import EthSafeMessage from './utils/messages/SafeMessage'
@@ -67,6 +70,18 @@ import {
 import { createPasskeyClient } from './utils/passkeys/PasskeyClient'
 import getPasskeyOwnerAddress from './utils/passkeys/getPasskeyOwnerAddress'
 import generateOnChainIdentifier from './utils/on-chain-tracking/generateOnChainIdentifier'
+
+// Import directly from source modules for re-export
+import { ZERO_ADDRESS, EMPTY_DATA, SENTINEL_ADDRESS } from './utils/constants'
+import { adjustVInSignature } from './utils/signatures'
+import { hasSafeFeature, SAFE_FEATURES } from './utils/safeVersions'
+import {
+  getCompatibilityFallbackHandlerContractInstance,
+  getMultiSendCallOnlyContractInstance,
+  getSafeContractInstance,
+  getSafeProxyFactoryContractInstance,
+  getSignMessageLibContractInstance
+} from './contracts/contractInstances'
 
 export {
   estimateTxBaseGas,
@@ -121,10 +136,35 @@ export {
   createPasskeyClient,
   EthSafeTransaction,
   EthSafeMessage,
-  getPasskeyOwnerAddress
+  getPasskeyOwnerAddress,
+  
+  ZERO_ADDRESS,
+  EMPTY_DATA,
+  SENTINEL_ADDRESS,
+  adjustVInSignature,
+  hasSafeFeature,
+  SAFE_FEATURES,
+  generatePreValidatedSignature,
+  isSafeMultisigTransactionResponse,
+  decodeMultiSendData,
+  
+  getCompatibilityFallbackHandlerContractInstance,
+  getMultiSendCallOnlyContractInstance,
+  getSafeContractInstance,
+  getSafeProxyFactoryContractInstance,
+  getSignMessageLibContractInstance
 }
 
+// Re-export all types
 export * from './types'
+
+// Re-export utilities
+export * from './utils/constants'
+export * from './utils/safeVersions'
+export * from './utils/signatures'
+export * from './contracts/Safe/SafeBaseContract'
+
+export { EthSafeTransaction as SafeTransaction }
 
 export default Safe
 

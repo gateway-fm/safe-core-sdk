@@ -1,20 +1,65 @@
 {
   "name": "@gateway-fm/protocol-kit",
-  "version": "6.0.9",
+  "version": "6.0.3-dev.0",
   "description": "SDK that facilitates the interaction with Safe Smart Accounts",
   "types": "dist/src/index.d.ts",
-  "main": "dist/cjs/src/index.cjs",
-  "module": "dist/esm/src/index.mjs",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "require": "./dist/cjs/src/index.cjs",
-      "import": "./dist/esm/src/index.mjs"
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs"
     },
     "./test-utils": {
       "types": "./dist/test-utils/index.d.ts",
       "require": "./dist/cjs/test-utils/index.cjs",
       "import": "./dist/esm/test-utils/index.mjs"
+    },
+    "./dist/src/utils/constants": {
+      "types": "./src/utils/constants.ts",
+      "require": "./src/utils/constants.ts",
+      "import": "./src/utils/constants.ts"
+    },
+    "./dist/src/utils/transactions/SafeTransaction": {
+      "types": "./src/utils/transactions/SafeTransaction.ts",
+      "require": "./src/utils/transactions/SafeTransaction.ts",
+      "import": "./src/utils/transactions/SafeTransaction.ts"
+    },
+    "./dist/src/utils/safeVersions": {
+      "types": "./src/utils/safeVersions.ts",
+      "require": "./src/utils/safeVersions.ts",
+      "import": "./src/utils/safeVersions.ts"
+    },
+    "./dist/src/utils/signatures": {
+      "types": "./src/utils/signatures/index.ts",
+      "require": "./src/utils/signatures/index.ts",
+      "import": "./src/utils/signatures/index.ts"
+    },
+    "./dist/src/utils": {
+      "types": "./src/utils/index.ts",
+      "require": "./src/utils/index.ts",
+      "import": "./src/utils/index.ts"
+    },
+    "./dist/src/contracts/contractInstances": {
+      "types": "./src/contracts/contractInstances.ts",
+      "require": "./src/contracts/contractInstances.ts",
+      "import": "./src/contracts/contractInstances.ts"
+    },
+    "./dist/src/contracts/Safe/SafeBaseContract": {
+      "types": "./src/contracts/Safe/SafeBaseContract.ts",
+      "require": "./src/contracts/Safe/SafeBaseContract.ts",
+      "import": "./src/contracts/Safe/SafeBaseContract.ts"
+    },
+    "./dist/src/contracts/safeDeploymentContracts": {
+      "types": "./src/contracts/safeDeploymentContracts.ts",
+      "require": "./src/contracts/safeDeploymentContracts.ts",
+      "import": "./src/contracts/safeDeploymentContracts.ts"
+    },
+    "./dist/src/utils/transactions/gas": {
+      "types": "./src/utils/transactions/gas.ts",
+      "require": "./src/utils/transactions/gas.ts",
+      "import": "./src/utils/transactions/gas.ts"
     }
   },
   "keywords": [
