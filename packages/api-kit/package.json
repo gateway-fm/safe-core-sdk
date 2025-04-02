@@ -1,5 +1,5 @@
 {
-  "name": "@safe-global/api-kit",
+  "name": "@gateway-fm/api-kit",
   "version": "3.0.1",
   "description": "SDK that facilitates the interaction with the Safe Transaction Service API",
   "types": "dist/src/index.d.ts",
@@ -65,9 +65,12 @@
     "tsconfig-paths": "^4.2.0"
   },
   "dependencies": {
-    "@safe-global/protocol-kit": "^6.0.2",
-    "@safe-global/types-kit": "^2.0.1",
+    "@gateway-fm/protocol-kit": "^6.0.2",
+    "@gateway-fm/types-kit": "^2.0.1",
     "node-fetch": "^2.7.0",
     "viem": "^2.21.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@safe-global/types-kit",
+  "name": "@gateway-fm/types-kit",
   "version": "2.0.1",
   "description": "Types for use with the Safe Core SDK packages",
   "types": "dist/src/index.d.ts",
@@ -41,5 +41,8 @@
   "homepage": "https://github.com/safe-global/safe-core-sdk#readme",
   "dependencies": {
     "abitype": "^1.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
