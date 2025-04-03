@@ -11,7 +11,7 @@ import Safe, {
   getPasskeyOwnerAddress,
   PredictedSafeProps,
   SafeProvider
-} from '@safe-global/protocol-kit/index'
+} from '@gateway-fm/protocol-kit/index'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import sinon from 'sinon'
@@ -19,14 +19,14 @@ import crypto from 'crypto'
 import {
   getSafeWebAuthnSignerFactoryContract,
   getSafeWebAuthnSharedSignerContract
-} from '@safe-global/protocol-kit/contracts/safeDeploymentContracts'
+} from '@gateway-fm/protocol-kit/contracts/safeDeploymentContracts'
 import { getEip1193Provider } from './utils/setupProvider'
 import { waitSafeTxReceipt } from './utils/transactions'
 import {
   createMockPasskey,
   getWebAuthnCredentials,
   deployPasskeysContract
-} from '@safe-global/protocol-kit/test-utils'
+} from '@gateway-fm/protocol-kit/test-utils'
 
 chai.use(chaiAsPromised)
 

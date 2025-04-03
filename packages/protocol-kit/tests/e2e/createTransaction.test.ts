@@ -3,7 +3,7 @@ import Safe, {
   SafeTransactionOptionalProps,
   standardizeSafeTransactionData,
   SafeContractImplementationType as SafeContract
-} from '@safe-global/protocol-kit/index'
+} from '@gateway-fm/protocol-kit/index'
 import { OperationType, SafeTransactionDataPartial } from '@safe-global/types-kit'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'

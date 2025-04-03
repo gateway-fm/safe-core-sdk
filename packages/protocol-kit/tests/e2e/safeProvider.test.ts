@@ -2,9 +2,9 @@ import { safeVersionDeployed, itif } from '@safe-global/testing-kit'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { getEip1193Provider } from './utils/setupProvider'
-import { SafeProvider } from '@safe-global/protocol-kit/index'
+import { SafeProvider } from '@gateway-fm/protocol-kit/index'
 import sinon from 'sinon'
-import { createMockPasskey, getWebAuthnCredentials } from '@safe-global/protocol-kit/test-utils'
+import { createMockPasskey, getWebAuthnCredentials } from '@gateway-fm/protocol-kit/test-utils'
 import { publicActions, walletActions } from 'viem'
 
 chai.use(chaiAsPromised)

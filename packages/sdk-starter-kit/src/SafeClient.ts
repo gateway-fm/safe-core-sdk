@@ -1,4 +1,4 @@
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import SafeApiKit, { SafeMultisigTransactionListResponse } from '@safe-global/api-kit'
 import {
   SafeMultisigTransactionResponse,

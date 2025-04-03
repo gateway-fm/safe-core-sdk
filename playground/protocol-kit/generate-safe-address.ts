@@ -3,7 +3,7 @@ import {
   SafeAccountConfig,
   SafeDeploymentConfig,
   predictSafeAddress
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import { SafeVersion } from '@safe-global/types-kit'
 
 // This script can be used to generate a custom Safe address

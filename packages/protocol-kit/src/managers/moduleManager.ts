@@ -1,9 +1,9 @@
-import { isRestrictedAddress, sameString } from '@safe-global/protocol-kit/utils'
-import { SENTINEL_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
+import { isRestrictedAddress, sameString } from '@gateway-fm/protocol-kit/utils'
+import { SENTINEL_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
 import {
   SafeContractImplementationType,
   SafeModulesPaginated
-} from '@safe-global/protocol-kit/types'
+} from '@gateway-fm/protocol-kit/types'
 import SafeProvider from '../SafeProvider'
 
 class ModuleManager {

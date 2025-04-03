@@ -1,4 +1,4 @@
-import Safe, { hashSafeMessage } from '@safe-global/protocol-kit'
+import Safe, { hashSafeMessage } from '@gateway-fm/protocol-kit'
 import SafeApiKit, { ListOptions, SafeMessageListResponse } from '@safe-global/api-kit'
 import { SafeMessage } from '@safe-global/types-kit'
 import { createSafeClientResult, sendTransaction } from '@safe-global/sdk-starter-kit/utils'

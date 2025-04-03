@@ -1,4 +1,4 @@
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit'
 import { Safe4337Pack } from '@safe-global/relay-kit'
 

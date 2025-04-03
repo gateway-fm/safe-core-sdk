@@ -1,6 +1,6 @@
-import MultiSendCallOnlyBaseContract from '@safe-global/protocol-kit/contracts/MultiSend/MultiSendCallOnlyBaseContract'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import MultiSendCallOnlyBaseContract from '@gateway-fm/protocol-kit/contracts/MultiSend/MultiSendCallOnlyBaseContract'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 import {
   MultiSendCallOnlyContract_v1_3_0_Abi,
   MultiSendCallOnlyContract_v1_3_0_Contract,

@@ -1,4 +1,4 @@
-import Safe, { estimateSafeTxGas } from '@safe-global/protocol-kit'
+import Safe, { estimateSafeTxGas } from '@gateway-fm/protocol-kit'
 import { Chain, gnosis, arbitrum, polygon } from 'viem/chains'
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
 

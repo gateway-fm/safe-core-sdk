@@ -1,4 +1,4 @@
-import { EthSafeSignature } from '@safe-global/protocol-kit'
+import { EthSafeSignature } from '@gateway-fm/protocol-kit'
 import SafeOperationV07 from './SafeOperationV07'
 import { fixtures } from '@safe-global/relay-kit/test-utils'
 

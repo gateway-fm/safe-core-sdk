@@ -4,7 +4,7 @@ import Safe, {
   RemoveOwnerTxParams,
   RemovePasskeyOwnerTxParams,
   SwapOwnerTxParams
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit'
 import { SafeTransaction, TransactionBase } from '@safe-global/types-kit'
 

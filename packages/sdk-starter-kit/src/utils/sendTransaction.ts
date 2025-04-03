@@ -1,6 +1,6 @@
 import { WalletClient, Transport, Chain, Hex, Account } from 'viem'
 import { waitForTransactionReceipt } from 'viem/actions'
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import { Transaction } from '@safe-global/types-kit'
 
 /**

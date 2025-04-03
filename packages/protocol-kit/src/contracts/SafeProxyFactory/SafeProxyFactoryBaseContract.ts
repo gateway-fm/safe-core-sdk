@@ -1,9 +1,9 @@
 import { Abi } from 'abitype'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import BaseContract from '@safe-global/protocol-kit/contracts/BaseContract'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import BaseContract from '@gateway-fm/protocol-kit/contracts/BaseContract'
 import { SafeVersion } from '@safe-global/types-kit'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
-import { contractName } from '@safe-global/protocol-kit/contracts/config'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
+import { contractName } from '@gateway-fm/protocol-kit/contracts/config'
 
 /**
  * Abstract class SafeProxyFactoryBaseContract extends BaseContract to specifically integrate with the SafeProxyFactory contract.

@@ -4,10 +4,10 @@ import {
   SAFE_FEATURES,
   SafeContractCompatibleWithGuardManager,
   sameString
-} from '@safe-global/protocol-kit/utils'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { asHex } from '@safe-global/protocol-kit/utils/types'
-import { SafeContractImplementationType } from '@safe-global/protocol-kit/types'
+} from '@gateway-fm/protocol-kit/utils'
+import { ZERO_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
+import { asHex } from '@gateway-fm/protocol-kit/utils/types'
+import { SafeContractImplementationType } from '@gateway-fm/protocol-kit/types'
 import SafeProvider from '../SafeProvider'
 
 class GuardManager {

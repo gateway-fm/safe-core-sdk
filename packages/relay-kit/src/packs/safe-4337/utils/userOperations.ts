@@ -1,4 +1,4 @@
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import { encodeFunctionData, getAddress, Hex, hexToBytes, sliceHex, toHex } from 'viem'
 import {
   MetaTransactionData,

@@ -1,4 +1,4 @@
-import { PredictedSafeProps } from '@safe-global/protocol-kit'
+import { PredictedSafeProps } from '@gateway-fm/protocol-kit'
 import { GetSafeOperationListResponse, ListOptions } from '@safe-global/api-kit'
 import { PaymasterOptions, Safe4337Pack } from '@safe-global/relay-kit'
 

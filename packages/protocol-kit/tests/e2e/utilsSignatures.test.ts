@@ -2,7 +2,7 @@ import chai from 'chai'
 import {
   adjustVInSignature,
   isTxHashSignedWithPrefix
-} from '@safe-global/protocol-kit/utils/signatures'
+} from '@gateway-fm/protocol-kit/utils/signatures'
 import { SigningMethod } from '@safe-global/types-kit'
 
 const safeTxHash = '0x4de27e660bd23052b71c854b0188ef1c5b325b10075c70f27afe2343e5c287f5'

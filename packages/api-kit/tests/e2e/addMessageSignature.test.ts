@@ -3,7 +3,7 @@ import Safe, {
   buildSignatureBytes,
   hashSafeMessage,
   buildContractSignature
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import { SafeMessage, SigningMethod } from '@safe-global/types-kit'
 import SafeApiKit from '@safe-global/api-kit/index'
 import chai from 'chai'

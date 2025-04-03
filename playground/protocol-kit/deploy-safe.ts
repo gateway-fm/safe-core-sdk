@@ -1,4 +1,4 @@
-import Safe, { SafeAccountConfig, getSafeAddressFromDeploymentTx } from '@safe-global/protocol-kit'
+import Safe, { SafeAccountConfig, getSafeAddressFromDeploymentTx } from '@gateway-fm/protocol-kit'
 import { SafeVersion } from '@safe-global/types-kit'
 
 import { createWalletClient, http } from 'viem'

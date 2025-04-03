@@ -1,4 +1,4 @@
-import Safe, { buildSignatureBytes } from '@safe-global/protocol-kit'
+import Safe, { buildSignatureBytes } from '@gateway-fm/protocol-kit'
 import SafeApiKit, { ListOptions, GetSafeOperationListResponse } from '@safe-global/api-kit'
 import { Safe4337Pack } from '@safe-global/relay-kit'
 

@@ -1,5 +1,5 @@
 import { Hex, concat, encodePacked } from 'viem'
-import { EthSafeSignature } from '@safe-global/protocol-kit'
+import { EthSafeSignature } from '@gateway-fm/protocol-kit'
 import { fixtures } from '@safe-global/relay-kit/test-utils'
 import SafeOperationV07 from './SafeOperationV07'
 import BaseSafeOperation from './BaseSafeOperation'

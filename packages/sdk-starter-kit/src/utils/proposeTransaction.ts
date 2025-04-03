@@ -1,4 +1,4 @@
-import Safe, { EthSafeSignature, buildSignatureBytes } from '@safe-global/protocol-kit'
+import Safe, { EthSafeSignature, buildSignatureBytes } from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit'
 import { SafeTransaction } from '@safe-global/types-kit'
 

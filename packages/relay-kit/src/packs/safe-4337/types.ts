@@ -3,7 +3,7 @@ import Safe, {
   DeploymentType,
   SafeProviderConfig,
   OnchainAnalyticsProps
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import {
   EstimateGasData,
   MetaTransactionData,

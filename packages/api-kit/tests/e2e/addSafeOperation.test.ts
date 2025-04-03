@@ -1,6 +1,6 @@
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit/index'
 import { getAddSafeOperationProps } from '@safe-global/api-kit/utils/safeOperation'
 import { Safe4337Pack } from '@safe-global/relay-kit'

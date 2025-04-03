@@ -1,6 +1,6 @@
 import { setupTests } from '@safe-global/testing-kit'
-import Safe, { SafeTransactionOptionalProps } from '@safe-global/protocol-kit/index'
-import { SENTINEL_ADDRESS, ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
+import Safe, { SafeTransactionOptionalProps } from '@gateway-fm/protocol-kit/index'
+import { SENTINEL_ADDRESS, ZERO_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { getEip1193Provider } from './utils/setupProvider'

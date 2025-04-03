@@ -11,9 +11,9 @@ import {
 import { estimateContractGas, getTransactionReceipt } from 'viem/actions'
 import { SingletonDeploymentV2 } from '@safe-global/safe-deployments'
 import { Deployment } from '@safe-global/safe-modules-deployments'
-import { contractName, getContractDeployment } from '@safe-global/protocol-kit/contracts/config'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
+import { contractName, getContractDeployment } from '@gateway-fm/protocol-kit/contracts/config'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
 import {
   EncodeFunction,
   EstimateGasFunction,
@@ -26,7 +26,7 @@ import {
   WalletTransactionOptions,
   WalletLegacyTransactionOptions,
   convertTransactionOptions
-} from '@safe-global/protocol-kit/utils'
+} from '@gateway-fm/protocol-kit/utils'
 import { ExternalClient } from '../types'
 
 /**

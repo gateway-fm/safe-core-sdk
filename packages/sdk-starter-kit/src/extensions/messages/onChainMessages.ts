@@ -1,4 +1,4 @@
-import { getSignMessageLibContract, hashSafeMessage } from '@safe-global/protocol-kit'
+import { getSignMessageLibContract, hashSafeMessage } from '@gateway-fm/protocol-kit'
 import { OperationType } from '@safe-global/types-kit'
 
 import { SafeClient } from '@safe-global/sdk-starter-kit/SafeClient'

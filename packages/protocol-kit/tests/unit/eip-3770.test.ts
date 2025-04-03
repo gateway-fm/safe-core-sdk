@@ -6,7 +6,7 @@ import {
   validateEip3770Address,
   validateEip3770NetworkPrefix,
   validateEthereumAddress
-} from '@safe-global/protocol-kit/utils'
+} from '@gateway-fm/protocol-kit/utils'
 
 declare module 'abitype' {
   export interface Register {

@@ -1,8 +1,8 @@
 import { PasskeyArgType, PasskeyClient } from '../src'
 import { WebAuthnCredentials } from './webauthnShim'
 import { WalletClient, keccak256, toBytes, Transport, Chain, Account } from 'viem'
-import { asHex } from '@safe-global/protocol-kit/utils/types'
-import { decodePublicKeyForWeb } from '@safe-global/protocol-kit/utils'
+import { asHex } from '@gateway-fm/protocol-kit/utils/types'
+import { decodePublicKeyForWeb } from '@gateway-fm/protocol-kit/utils'
 
 let singleInstance: WebAuthnCredentials
 

@@ -1,4 +1,4 @@
-import { SafeProvider } from '@safe-global/protocol-kit'
+import { SafeProvider } from '@gateway-fm/protocol-kit'
 import {
   TransactionBase,
   TransactionOptions,
