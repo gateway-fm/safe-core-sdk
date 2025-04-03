@@ -15,10 +15,10 @@ import {
   decodeEventLog
 } from 'viem'
 import { waitForTransactionReceipt } from 'viem/actions'
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { createMemoizedFunction } from '@safe-global/protocol-kit/utils/memoized'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import { DEFAULT_SAFE_VERSION } from '@gateway-fm/protocol-kit/contracts/config'
+import { EMPTY_DATA, ZERO_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
+import { createMemoizedFunction } from '@gateway-fm/protocol-kit/utils/memoized'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 import {
   SafeProxyFactoryContractType,
   SafeVersion,
@@ -41,7 +41,7 @@ import {
   SafeContractImplementationType,
   SafeDeploymentConfig
 } from '../types'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
 
 // keccak256(toUtf8Bytes('Safe Account Abstraction'))
 export const PREDETERMINED_SALT_NONCE =

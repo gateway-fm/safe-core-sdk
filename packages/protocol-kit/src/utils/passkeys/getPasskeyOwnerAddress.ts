@@ -1,6 +1,6 @@
-import Safe from '@safe-global/protocol-kit/Safe'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { PasskeyArgType } from '@safe-global/protocol-kit/types'
+import Safe from '@gateway-fm/protocol-kit/Safe'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { PasskeyArgType } from '@gateway-fm/protocol-kit/types'
 
 /**
  * Returns the owner address associated with the specific passkey.

@@ -1,5 +1,5 @@
 import { recoverAddress } from 'viem'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
 import {
   SafeSignature,
   SafeEIP712Args,

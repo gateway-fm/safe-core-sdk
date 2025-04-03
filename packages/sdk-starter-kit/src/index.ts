@@ -1,4 +1,4 @@
-import Safe, { SafeConfig } from '@safe-global/protocol-kit'
+import Safe, { SafeConfig } from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit'
 
 import { SafeClient } from '@safe-global/sdk-starter-kit/SafeClient'

@@ -5,7 +5,7 @@ import {
   getSafeAddressFromDeploymentTx,
   PREDETERMINED_SALT_NONCE,
   predictSafeAddress
-} from '@safe-global/protocol-kit/contracts/utils'
+} from '@gateway-fm/protocol-kit/contracts/utils'
 import {
   safeVersionDeployed,
   setupTests,
@@ -18,9 +18,9 @@ import {
   ContractNetworksConfig,
   Eip1193Provider,
   PredictedSafeProps
-} from '@safe-global/protocol-kit/types'
-import Safe from '@safe-global/protocol-kit/index'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
+} from '@gateway-fm/protocol-kit/types'
+import Safe from '@gateway-fm/protocol-kit/index'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
 
 // test util funcion to deploy a safe (needed to check the expected Safe Address)
 async function deploySafe(

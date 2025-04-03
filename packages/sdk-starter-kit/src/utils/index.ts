@@ -1,4 +1,4 @@
-import { validateEthereumAddress } from '@safe-global/protocol-kit'
+import { validateEthereumAddress } from '@gateway-fm/protocol-kit'
 import { TransactionResult } from '@safe-global/types-kit'
 import { GetTransactionReceiptReturnType } from 'viem'
 

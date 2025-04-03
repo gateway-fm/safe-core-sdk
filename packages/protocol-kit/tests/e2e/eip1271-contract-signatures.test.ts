@@ -1,4 +1,4 @@
-import Safe, { buildContractSignature, hashSafeMessage } from '@safe-global/protocol-kit/index'
+import Safe, { buildContractSignature, hashSafeMessage } from '@gateway-fm/protocol-kit/index'
 import {
   safeVersionDeployed,
   setupTests as testingKitSetupTests,

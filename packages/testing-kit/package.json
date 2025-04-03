@@ -1,5 +1,5 @@
 {
-  "name": "@safe-global/testing-kit",
+  "name": "@gateway-fm/testing-kit",
   "version": "0.2.1",
   "description": "Helper package providing testing utilities",
   "types": "dist/src/src/index.d.ts",
@@ -21,7 +21,7 @@
   "scripts": {
     "format:check": "prettier --check \"*/**/*.{js,json,md,ts}\"",
     "format": "prettier --write \"*/**/*.{js,json,md,ts}\"",
-    "unbuild": "rimraf dist artifacts deployments cache .nyc_output *.tsbuildinfo",
+    "unbuild": "rimraf dist artifacts deployments cache .nyc_output *.tsbuildinfo || true",
     "build": "yarn unbuild && hardhat compile && yarn build:esm && yarn build:cjs && yarn build:types",
     "build:esm": "esbuild ./src/index --format=esm --bundle --packages=external --outdir=dist/esm --out-extension:.js=.mjs",
     "build:cjs": "esbuild ./src/index --format=cjs --bundle --packages=external --outdir=dist/cjs --out-extension:.js=.cjs",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/safe-global/safe-core-sdk.git"
+    "url": "git+https://github.com/gateway-fm/safe-core-sdk.git"
   },
   "author": "Safe (https://safe.global)",
   "license": "MIT",
@@ -58,10 +58,18 @@
   "dependencies": {
     "semver": "^7.7.1"
   },
-  "bin": {
-    "testing-kit": "./bin/testing-kit.js"
-  },
+  "bin": "./bin/testing-kit.js",
   "peerDependencies": {
     "hardhat": "^2.19.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "resolutions": {
+    "@safe-global/api-kit": "npm:@gateway-fm/api-kit@latest",
+    "@safe-global/relay-kit": "npm:@gateway-fm/relay-kit@latest",
+    "@safe-global/sdk-starter-kit": "npm:@gateway-fm/sdk-starter-kit@latest",
+    "@safe-global/testing-kit": "npm:@gateway-fm/testing-kit@latest",
+    "@safe-global/types-kit": "npm:@gateway-fm/types-kit@latest"
   }
 }

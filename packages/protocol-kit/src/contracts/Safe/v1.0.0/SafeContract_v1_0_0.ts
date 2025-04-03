@@ -1,10 +1,10 @@
 import { Address, ContractFunctionArgs } from 'viem'
 import { simulateContract } from 'viem/actions'
-import SafeBaseContract from '@safe-global/protocol-kit/contracts/Safe/SafeBaseContract'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { toTxResult } from '@safe-global/protocol-kit/contracts/utils'
-import { sameString, isSentinelAddress } from '@safe-global/protocol-kit/utils'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import SafeBaseContract from '@gateway-fm/protocol-kit/contracts/Safe/SafeBaseContract'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { toTxResult } from '@gateway-fm/protocol-kit/contracts/utils'
+import { sameString, isSentinelAddress } from '@gateway-fm/protocol-kit/utils'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 import {
   SafeContract_v1_0_0_Abi,
   SafeContract_v1_0_0_Function,
@@ -14,8 +14,8 @@ import {
   TransactionOptions,
   TransactionResult
 } from '@safe-global/types-kit'
-import { SENTINEL_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
-import { asHash, asHex } from '@safe-global/protocol-kit/utils/types'
+import { SENTINEL_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
+import { asHash, asHex } from '@gateway-fm/protocol-kit/utils/types'
 
 /**
  * SafeContract_v1_0_0  is the implementation specific to the Safe contract version 1.0.0.

@@ -7,7 +7,7 @@ import {
   SafeUserOperation,
   UserOperation
 } from '@safe-global/types-kit'
-import { buildSignatureBytes } from '@safe-global/protocol-kit'
+import { buildSignatureBytes } from '@gateway-fm/protocol-kit'
 import {
   EIP712_SAFE_OPERATION_TYPE_V06,
   EIP712_SAFE_OPERATION_TYPE_V07

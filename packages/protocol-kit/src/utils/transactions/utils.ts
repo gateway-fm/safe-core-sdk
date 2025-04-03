@@ -1,5 +1,5 @@
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DEFAULT_SAFE_VERSION } from '@gateway-fm/protocol-kit/contracts/config'
 import {
   AddOwnerTxParams,
   AddPasskeyOwnerTxParams,
@@ -10,9 +10,9 @@ import {
   StandardizeSafeTransactionDataProps,
   SwapOwnerTxParams,
   ExternalClient
-} from '@safe-global/protocol-kit/types'
-import { hasSafeFeature, SAFE_FEATURES } from '@safe-global/protocol-kit/utils'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/utils/constants'
+} from '@gateway-fm/protocol-kit/types'
+import { hasSafeFeature, SAFE_FEATURES } from '@gateway-fm/protocol-kit/utils'
+import { ZERO_ADDRESS } from '@gateway-fm/protocol-kit/utils/constants'
 import { asHex } from '../types'
 import {
   MetaTransactionData,

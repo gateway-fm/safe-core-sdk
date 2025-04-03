@@ -18,7 +18,8 @@ import {
   getSafeContract,
   getSignMessageLibContract,
   getSafeWebAuthnSignerFactoryContract,
-  getSafeWebAuthnSharedSignerContract
+  getSafeWebAuthnSharedSignerContract,
+  getSimulateTxAccessorContract
 } from './contracts/safeDeploymentContracts'
 import {
   PREDETERMINED_SALT_NONCE,
@@ -37,7 +38,10 @@ import {
   estimateSafeDeploymentGas,
   extractPasskeyData,
   validateEthereumAddress,
-  validateEip3770Address
+  validateEip3770Address,
+  decodeMultiSendData,
+  generatePreValidatedSignature,
+  isSafeMultisigTransactionResponse
 } from './utils'
 import EthSafeTransaction from './utils/transactions/SafeTransaction'
 import EthSafeMessage from './utils/messages/SafeMessage'
@@ -67,6 +71,20 @@ import {
 import { createPasskeyClient } from './utils/passkeys/PasskeyClient'
 import getPasskeyOwnerAddress from './utils/passkeys/getPasskeyOwnerAddress'
 import generateOnChainIdentifier from './utils/on-chain-tracking/generateOnChainIdentifier'
+
+// Import directly from source modules for re-export
+import { ZERO_ADDRESS, EMPTY_DATA, SENTINEL_ADDRESS } from './utils/constants'
+import { adjustVInSignature } from './utils/signatures'
+import { hasSafeFeature, SAFE_FEATURES } from './utils/safeVersions'
+import { sameString } from './utils/address'
+import { networks } from './utils/eip-3770/config'
+import {
+  getCompatibilityFallbackHandlerContractInstance,
+  getMultiSendCallOnlyContractInstance,
+  getSafeContractInstance,
+  getSafeProxyFactoryContractInstance,
+  getSignMessageLibContractInstance
+} from './contracts/contractInstances'
 
 export {
   estimateTxBaseGas,
@@ -121,10 +139,73 @@ export {
   createPasskeyClient,
   EthSafeTransaction,
   EthSafeMessage,
-  getPasskeyOwnerAddress
+  getPasskeyOwnerAddress,
+  ZERO_ADDRESS,
+  EMPTY_DATA,
+  SENTINEL_ADDRESS,
+  adjustVInSignature,
+  hasSafeFeature,
+  SAFE_FEATURES,
+  generatePreValidatedSignature,
+  isSafeMultisigTransactionResponse,
+  decodeMultiSendData,
+  getCompatibilityFallbackHandlerContractInstance,
+  getMultiSendCallOnlyContractInstance,
+  getSafeContractInstance,
+  getSafeProxyFactoryContractInstance,
+  getSignMessageLibContractInstance,
+  sameString,
+  networks,
+  getSimulateTxAccessorContract
 }
 
 export * from './types'
+export * from './utils/constants'
+export * from './utils/safeVersions'
+export * from './utils/signatures'
+export * from './contracts/Safe/SafeBaseContract'
+
+export { SigningMethod } from '@safe-global/types-kit'
+
+export interface DeploySafeProps {
+  safeAccountConfig: {
+    owners: string[]
+    threshold: number
+    to?: string
+    data?: string
+    fallbackHandler?: string
+    paymentToken?: string
+    payment?: string
+    paymentReceiver?: string
+  }
+  saltNonce: string | number
+  options?: {
+    gasLimit?: string
+    gasPrice?: string
+    maxFeePerGas?: string
+    maxPriorityFeePerGas?: string
+  }
+  callback?: (txHash: string) => void
+}
+
+export interface PredictedSafeProps {
+  safeAccountConfig: {
+    owners: string[]
+    threshold: number
+    to?: string
+    data?: string
+    fallbackHandler?: string
+    paymentToken?: string
+    payment?: string
+    paymentReceiver?: string
+  }
+  safeDeploymentConfig: {
+    saltNonce: string | number
+    safeVersion: string
+  }
+}
+
+export { EthSafeTransaction as SafeTransaction, Safe as SafeFactory }
 
 export default Safe
 

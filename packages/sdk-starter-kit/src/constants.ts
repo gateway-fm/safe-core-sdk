@@ -1,4 +1,4 @@
-import { DeploymentType } from '@safe-global/protocol-kit'
+import { DeploymentType } from '@gateway-fm/protocol-kit'
 
 export const DEFAULT_SAFE_MODULES_VERSION = '0.2.0'
 

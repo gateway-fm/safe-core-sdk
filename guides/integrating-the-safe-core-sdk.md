@@ -17,8 +17,8 @@
 To integrate the [Safe Core SDK](https://github.com/safe-global/safe-core-sdk) into your Dapp or script you will need to install these dependencies:
 
 ```
+@gateway-fm/protocol-kit
 @safe-global/types-kit
-@safe-global/protocol-kit
 @safe-global/api-kit
 ```
 
@@ -55,7 +55,7 @@ const apiKit = new SafeApiKit({
 ### Initialize the Protocol Kit
 
 ```js
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 
 const protocolKit = await Safe.init({ provider, signer, safeAddress })
 ```
@@ -72,7 +72,7 @@ const protocolKit = await Safe.init({ provider, signer, safeAddress, isL1SafeSin
 If the Safe contracts are not deployed to your current network, the property `contractNetworks` will be required to point to the addresses of the Safe contracts previously deployed by you.
 
 ```js
-import { ContractNetworksConfig, SafeProvider } from '@safe-global/protocol-kit'
+import { ContractNetworksConfig, SafeProvider } from '@gateway-fm/protocol-kit'
 
 const safeProvider = new SafeProvider({ provider, signer })
 const chainId = await safeProvider.getChainId()
@@ -109,7 +109,7 @@ The Protocol Kit library now simplifies the creation of new Safes by providing t
 Here is an example of how to create a new Safe account with 3 owners and 2 required signatures:
 
 ```js
-import { SafeAccountConfig } from '@safe-global/protocol-kit'
+import { SafeAccountConfig } from '@gateway-fm/protocol-kit'
 
 const safeAccountConfig: SafeAccountConfig = {
   owners: ['0x...', '0x...', '0x...'],
@@ -177,7 +177,7 @@ This method takes an array of `MetaTransactionData` objects that represent the i
 When the array contains only one transaction, it is not wrapped in the MultiSend.
 
 ```js
-import { SafeTransactionOptionalProps } from '@safe-global/protocol-kit'
+import { SafeTransactionOptionalProps } from '@gateway-fm/protocol-kit'
 import { MetaTransactionData } from '@safe-global/types-kit'
 
 const transactions: MetaTransactionData[] = [

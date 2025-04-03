@@ -5,7 +5,7 @@ import Safe, {
   estimateSafeTxGas,
   estimateSafeDeploymentGas,
   createERC20TokenTransferTransaction
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import { MetaTransactionData, OperationType, SafeTransaction } from '@safe-global/types-kit'
 
 import {
@@ -71,7 +71,7 @@ jest.mock('@gelatonetwork/relay-sdk', () => {
   }
 })
 
-jest.mock('@safe-global/protocol-kit')
+jest.mock('@gateway-fm/protocol-kit')
 
 // Cast the import to jest.Mocked type
 const mockEstimateTxBaseGas = estimateTxBaseGas as jest.MockedFunction<typeof estimateTxBaseGas>
@@ -88,8 +88,8 @@ const mockedIsGasTokenCompatibleWithHandlePayment =
     typeof isGasTokenCompatibleWithHandlePayment
   >
 
-jest.doMock('@safe-global/protocol-kit', () => ({
-  ...jest.requireActual('@safe-global/protocol-kit'),
+jest.doMock('@gateway-fm/protocol-kit', () => ({
+  ...jest.requireActual('@gateway-fm/protocol-kit'),
   estimateTxBaseGas: mockEstimateTxBaseGas,
   estimateSafeTxGas: mockEstimateSafeTxGas,
   estimateSafeDeploymentGas: mockEstimateSafeDeploymentGas,

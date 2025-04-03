@@ -1,8 +1,8 @@
 import crypto from 'crypto'
 import dotenv from 'dotenv'
 import * as viem from 'viem'
-import Safe, * as protocolKit from '@safe-global/protocol-kit'
-import { WebAuthnCredentials, createMockPasskey } from '@safe-global/protocol-kit/test-utils'
+import Safe, * as protocolKit from '@gateway-fm/protocol-kit'
+import { WebAuthnCredentials, createMockPasskey } from '@gateway-fm/protocol-kit/test-utils'
 import {
   getSafeModuleSetupDeployment,
   getSafe4337ModuleDeployment

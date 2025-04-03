@@ -39,7 +39,7 @@ import {
 } from '@safe-global/api-kit/types/safeTransactionServiceTypes'
 import { HttpMethod, sendRequest } from '@safe-global/api-kit/utils/httpRequests'
 import { signDelegate } from '@safe-global/api-kit/utils/signDelegate'
-import { validateEip3770Address, validateEthereumAddress } from '@safe-global/protocol-kit'
+import { validateEip3770Address, validateEthereumAddress } from '@gateway-fm/protocol-kit'
 import {
   DataDecoded,
   Eip3770Address,

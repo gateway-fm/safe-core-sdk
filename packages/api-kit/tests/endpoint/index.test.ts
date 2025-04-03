@@ -12,7 +12,7 @@ import SafeApiKit, {
   SafeMultisigTransactionEstimate
 } from '@safe-global/api-kit/index'
 import * as httpRequests from '@safe-global/api-kit/utils/httpRequests'
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import { UserOperation } from '@safe-global/types-kit'
 import { signDelegate } from '@safe-global/api-kit/utils/signDelegate'
 import config from '../utils/config'

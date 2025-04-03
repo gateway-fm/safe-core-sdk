@@ -1,13 +1,13 @@
-import CreateCallBaseContract from '@safe-global/protocol-kit/contracts/CreateCall/CreateCallBaseContract'
+import CreateCallBaseContract from '@gateway-fm/protocol-kit/contracts/CreateCall/CreateCallBaseContract'
 import {
   CreateCallContract_v1_3_0_Abi,
   CreateCallContract_v1_3_0_Contract,
   createCall_1_3_0_ContractArtifacts,
   SafeContractFunction
 } from '@safe-global/types-kit'
-import { toTxResult } from '@safe-global/protocol-kit/contracts/utils'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import { toTxResult } from '@gateway-fm/protocol-kit/contracts/utils'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 
 /**
  * CreateCallContract_v1_3_0  is the implementation specific to the CreateCall contract version 1.3.0.

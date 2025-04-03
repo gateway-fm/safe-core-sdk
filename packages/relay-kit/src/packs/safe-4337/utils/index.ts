@@ -1,6 +1,6 @@
 import { Hex, PublicRpcSchema, createPublicClient, encodeFunctionData, http, rpcSchema } from 'viem'
 import { OperationType, MetaTransactionData } from '@safe-global/types-kit'
-import { encodeMultiSendData } from '@safe-global/protocol-kit'
+import { encodeMultiSendData } from '@gateway-fm/protocol-kit'
 import { ABI } from '@safe-global/relay-kit/packs/safe-4337/constants'
 import {
   BundlerClient,

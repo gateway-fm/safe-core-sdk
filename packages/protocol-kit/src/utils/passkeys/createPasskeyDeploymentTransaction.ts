@@ -1,8 +1,8 @@
 import { Hex } from 'viem'
 
-import Safe from '@safe-global/protocol-kit/Safe'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { PasskeyArgType, PasskeyClient } from '@safe-global/protocol-kit/types'
+import Safe from '@gateway-fm/protocol-kit/Safe'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { PasskeyArgType, PasskeyClient } from '@gateway-fm/protocol-kit/types'
 
 /**
  * Creates the deployment transaction to create a passkey signer.

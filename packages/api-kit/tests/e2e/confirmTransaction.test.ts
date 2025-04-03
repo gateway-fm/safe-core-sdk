@@ -2,7 +2,7 @@ import Safe, {
   EthSafeSignature,
   buildSignatureBytes,
   buildContractSignature
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import {
   SafeMultisigConfirmationResponse,
   SafeTransactionDataPartial,

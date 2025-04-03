@@ -2,7 +2,7 @@ import hre from 'hardhat'
 import { BrowserProvider } from 'ethers'
 import { custom, createWalletClient } from 'viem'
 
-import Safe, { SafeProviderConfig, Eip1193Provider } from '@safe-global/protocol-kit'
+import Safe, { SafeProviderConfig, Eip1193Provider } from '@gateway-fm/protocol-kit'
 import SafeApiKit from '@safe-global/api-kit/index'
 
 import config from './config'

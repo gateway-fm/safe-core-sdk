@@ -12,7 +12,7 @@ import {
   estimateSafeDeploymentGas,
   createERC20TokenTransferTransaction,
   isGasTokenCompatibleWithHandlePayment
-} from '@safe-global/protocol-kit'
+} from '@gateway-fm/protocol-kit'
 import { RelayKitBasePack } from '@safe-global/relay-kit/RelayKitBasePack'
 import {
   GELATO_FEE_COLLECTOR,

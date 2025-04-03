@@ -1,4 +1,4 @@
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
 import {
   getCompatibilityFallbackHandlerContractInstance,
   getCreateCallContractInstance,
@@ -10,7 +10,7 @@ import {
   getSafeWebAuthnSignerFactoryContractInstance,
   getSignMessageLibContractInstance,
   getSimulateTxAccessorContractInstance
-} from '@safe-global/protocol-kit/contracts/contractInstances'
+} from '@gateway-fm/protocol-kit/contracts/contractInstances'
 import {
   CompatibilityFallbackHandlerContractImplementationType,
   ContractNetworkConfig,
@@ -24,7 +24,7 @@ import {
   SafeWebAuthnSignerFactoryContractImplementationType,
   SignMessageLibContractImplementationType,
   SimulateTxAccessorContractImplementationType
-} from '@safe-global/protocol-kit/types'
+} from '@gateway-fm/protocol-kit/types'
 import { SafeVersion } from '@safe-global/types-kit'
 
 export interface GetContractInstanceProps {

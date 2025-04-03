@@ -1,4 +1,4 @@
-import Safe, { DeploymentType, SafeAccountConfig } from '@safe-global/protocol-kit'
+import Safe, { DeploymentType, SafeAccountConfig } from '@gateway-fm/protocol-kit'
 import { SafeVersion } from '@safe-global/types-kit'
 import {
   gnosis,

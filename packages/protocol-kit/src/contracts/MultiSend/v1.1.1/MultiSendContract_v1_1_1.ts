@@ -1,6 +1,6 @@
-import MultiSendBaseContract from '@safe-global/protocol-kit/contracts/MultiSend/MultiSendBaseContract'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import MultiSendBaseContract from '@gateway-fm/protocol-kit/contracts/MultiSend/MultiSendBaseContract'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 import {
   multisend_1_1_1_ContractArtifacts,
   MultiSendContract_v1_1_1_Abi,

@@ -1,4 +1,4 @@
-import SafeWebAuthnSignerFactoryBaseContract from '@safe-global/protocol-kit/contracts/SafeWebAuthnSignerFactory/SafeWebAuthnSignerFactoryBaseContract'
+import SafeWebAuthnSignerFactoryBaseContract from '@gateway-fm/protocol-kit/contracts/SafeWebAuthnSignerFactory/SafeWebAuthnSignerFactoryBaseContract'
 import {
   SafeVersion,
   SafeWebAuthnSignerFactoryContract_v0_2_1_Abi,
@@ -6,8 +6,8 @@ import {
   SafeWebAuthnSignerFactoryContract_v0_2_1_Function,
   SafeWebAuthnSignerFactory_0_2_1_ContractArtifacts
 } from '@safe-global/types-kit'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 
 /**
  * SafeWebAuthnSignerFactoryContract_v0_2_1  is the implementation specific to the SafeWebAuthnSigner Factory contract version 0.2.1.

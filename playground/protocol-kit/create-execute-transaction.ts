@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv'
-import Safe from '@safe-global/protocol-kit'
+import type Safe from '@gateway-fm/protocol-kit'
 import { OperationType, SafeTransactionDataPartial, SigningMethod } from '@safe-global/types-kit'
 
 dotenv.config()

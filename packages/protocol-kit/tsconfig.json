@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@safe-global/protocol-kit/*": ["./src/*"]
+      "@gateway-fm/protocol-kit/*": ["./src/*"]
     },
     "outDir": "dist"
   },

@@ -1,20 +1,20 @@
-import { DEFAULT_SAFE_VERSION } from '@safe-global/protocol-kit/contracts/config'
+import { DEFAULT_SAFE_VERSION } from '@gateway-fm/protocol-kit/contracts/config'
 import {
   getMultiSendCallOnlyContract,
   getMultiSendContract,
   getSafeContract
-} from '@safe-global/protocol-kit/contracts/safeDeploymentContracts'
+} from '@gateway-fm/protocol-kit/contracts/safeDeploymentContracts'
 import {
   ContractNetworksConfig,
   MultiSendCallOnlyContractImplementationType,
   MultiSendContractImplementationType,
   SafeConfig,
   SafeContractImplementationType
-} from '@safe-global/protocol-kit/types'
+} from '@gateway-fm/protocol-kit/types'
 import { SafeVersion } from '@safe-global/types-kit'
 import { isSafeConfigWithPredictedSafe } from '../utils/types'
 import SafeProvider from '../SafeProvider'
-import { getSafeContractVersion } from '@safe-global/protocol-kit/contracts/utils'
+import { getSafeContractVersion } from '@gateway-fm/protocol-kit/contracts/utils'
 
 class ContractManager {
   #contractNetworks?: ContractNetworksConfig

@@ -1,6 +1,6 @@
-import CompatibilityFallbackHandlerBaseContract from '@safe-global/protocol-kit/contracts/CompatibilityFallbackHandler/CompatibilityFallbackHandlerBaseContract'
-import SafeProvider from '@safe-global/protocol-kit/SafeProvider'
-import { DeploymentType } from '@safe-global/protocol-kit/types'
+import CompatibilityFallbackHandlerBaseContract from '@gateway-fm/protocol-kit/contracts/CompatibilityFallbackHandler/CompatibilityFallbackHandlerBaseContract'
+import SafeProvider from '@gateway-fm/protocol-kit/SafeProvider'
+import { DeploymentType } from '@gateway-fm/protocol-kit/types'
 import {
   CompatibilityFallbackHandlerContract_v1_3_0_Abi,
   CompatibilityFallbackHandlerContract_v1_3_0_Contract,
