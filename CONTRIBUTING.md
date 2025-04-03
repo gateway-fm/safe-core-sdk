@@ -65,7 +65,7 @@ If you would like to test individual packages, **once you make sure you did the 
 
 ```bash
 yarn test --scope=<package-name>
-yarn test --scope=@safe-global/protocol-kit
+yarn test --scope=@gateway-fm/protocol-kit
 yarn test --scope=@safe-global/api-kit
 ```
 

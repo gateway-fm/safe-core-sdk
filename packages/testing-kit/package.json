@@ -58,9 +58,7 @@
   "dependencies": {
     "semver": "^7.7.1"
   },
-  "bin": {
-    "testing-kit": "./bin/testing-kit.js"
-  },
+  "bin": "./bin/testing-kit.js",
   "peerDependencies": {
     "hardhat": "^2.19.3"
   },
@@ -68,7 +66,6 @@
     "registry": "https://npm.pkg.github.com"
   },
   "resolutions": {
-    "@safe-global/protocol-kit": "npm:@gateway-fm/protocol-kit@6.0.3-dev.0",
     "@safe-global/api-kit": "npm:@gateway-fm/api-kit@latest",
     "@safe-global/relay-kit": "npm:@gateway-fm/relay-kit@latest",
     "@safe-global/sdk-starter-kit": "npm:@gateway-fm/sdk-starter-kit@latest",

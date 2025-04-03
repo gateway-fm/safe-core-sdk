@@ -65,13 +65,12 @@
     "tsconfig-paths": "^4.2.0"
   },
   "dependencies": {
-    "@safe-global/protocol-kit": "^6.0.2",
+    "@gateway-fm/protocol-kit": "6.0.3-dev.1",
     "@safe-global/types-kit": "^2.0.1",
     "node-fetch": "^2.7.0",
     "viem": "^2.21.8"
   },
   "resolutions": {
-    "@safe-global/protocol-kit": "npm:@gateway-fm/protocol-kit@6.0.3-dev.0",
     "@safe-global/api-kit": "npm:@gateway-fm/api-kit@latest",
     "@safe-global/relay-kit": "npm:@gateway-fm/relay-kit@latest",
     "@safe-global/sdk-starter-kit": "npm:@gateway-fm/sdk-starter-kit@latest",
