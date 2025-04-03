@@ -52,7 +52,9 @@ export function safeOperations(
         owners: safeAccountConfig.owners,
         threshold: safeAccountConfig.threshold,
         safeVersion: safeDeploymentConfig?.safeVersion as SafeVersion,
-        saltNonce: safeDeploymentConfig?.saltNonce ? String(safeDeploymentConfig.saltNonce) : undefined
+        saltNonce: safeDeploymentConfig?.saltNonce
+          ? String(safeDeploymentConfig.saltNonce)
+          : undefined
       }
     }
 

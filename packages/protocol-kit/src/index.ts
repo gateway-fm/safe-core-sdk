@@ -140,7 +140,6 @@ export {
   EthSafeTransaction,
   EthSafeMessage,
   getPasskeyOwnerAddress,
-  
   ZERO_ADDRESS,
   EMPTY_DATA,
   SENTINEL_ADDRESS,
@@ -150,13 +149,11 @@ export {
   generatePreValidatedSignature,
   isSafeMultisigTransactionResponse,
   decodeMultiSendData,
-  
   getCompatibilityFallbackHandlerContractInstance,
   getMultiSendCallOnlyContractInstance,
   getSafeContractInstance,
   getSafeProxyFactoryContractInstance,
   getSignMessageLibContractInstance,
-  
   sameString,
   networks,
   getSimulateTxAccessorContract
