@@ -1,6 +1,7 @@
 import { PredictedSafeProps } from '@gateway-fm/protocol-kit'
 import { GetSafeOperationListResponse, ListOptions } from '@safe-global/api-kit'
 import { PaymasterOptions, Safe4337Pack } from '@safe-global/relay-kit'
+import { SafeVersion } from '@safe-global/types-kit'
 
 import { SafeClient } from '@safe-global/sdk-starter-kit/SafeClient'
 import { SafeOperationClient } from '@safe-global/sdk-starter-kit/extensions/safe-operations/SafeOperationClient'
@@ -50,7 +51,8 @@ export function safeOperations(
       options = {
         owners: safeAccountConfig.owners,
         threshold: safeAccountConfig.threshold,
-        ...safeDeploymentConfig
+        safeVersion: safeDeploymentConfig?.safeVersion as SafeVersion,
+        saltNonce: safeDeploymentConfig?.saltNonce ? String(safeDeploymentConfig.saltNonce) : undefined
       }
     }
 

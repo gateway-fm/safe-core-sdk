@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@gateway-fm/protocol-kit": "6.0.3-dev.3",
+    "@safe-global/api-kit": "^2.4.6",
     "@safe-global/types-kit": "^2.0.1",
     "viem": "^2.21.8"
   },
