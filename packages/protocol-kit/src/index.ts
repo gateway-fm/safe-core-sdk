@@ -18,7 +18,8 @@ import {
   getSafeContract,
   getSignMessageLibContract,
   getSafeWebAuthnSignerFactoryContract,
-  getSafeWebAuthnSharedSignerContract
+  getSafeWebAuthnSharedSignerContract,
+  getSimulateTxAccessorContract
 } from './contracts/safeDeploymentContracts'
 import {
   PREDETERMINED_SALT_NONCE,
@@ -75,6 +76,8 @@ import generateOnChainIdentifier from './utils/on-chain-tracking/generateOnChain
 import { ZERO_ADDRESS, EMPTY_DATA, SENTINEL_ADDRESS } from './utils/constants'
 import { adjustVInSignature } from './utils/signatures'
 import { hasSafeFeature, SAFE_FEATURES } from './utils/safeVersions'
+import { sameString } from './utils/address'
+import { networks } from './utils/eip-3770/config'
 import {
   getCompatibilityFallbackHandlerContractInstance,
   getMultiSendCallOnlyContractInstance,
@@ -152,19 +155,60 @@ export {
   getMultiSendCallOnlyContractInstance,
   getSafeContractInstance,
   getSafeProxyFactoryContractInstance,
-  getSignMessageLibContractInstance
+  getSignMessageLibContractInstance,
+  
+  sameString,
+  networks,
+  getSimulateTxAccessorContract
 }
 
-// Re-export all types
 export * from './types'
-
-// Re-export utilities
 export * from './utils/constants'
 export * from './utils/safeVersions'
 export * from './utils/signatures'
 export * from './contracts/Safe/SafeBaseContract'
 
-export { EthSafeTransaction as SafeTransaction }
+export { SigningMethod } from '@safe-global/types-kit'
+
+export interface DeploySafeProps {
+  safeAccountConfig: {
+    owners: string[]
+    threshold: number
+    to?: string
+    data?: string
+    fallbackHandler?: string
+    paymentToken?: string
+    payment?: string
+    paymentReceiver?: string
+  }
+  saltNonce: string | number
+  options?: {
+    gasLimit?: string
+    gasPrice?: string
+    maxFeePerGas?: string
+    maxPriorityFeePerGas?: string
+  }
+  callback?: (txHash: string) => void
+}
+
+export interface PredictedSafeProps {
+  safeAccountConfig: {
+    owners: string[]
+    threshold: number
+    to?: string
+    data?: string
+    fallbackHandler?: string
+    paymentToken?: string
+    payment?: string
+    paymentReceiver?: string
+  }
+  safeDeploymentConfig: {
+    saltNonce: string | number
+    safeVersion: string
+  }
+}
+
+export { EthSafeTransaction as SafeTransaction, Safe as SafeFactory }
 
 export default Safe
 
