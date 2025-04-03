@@ -1,15 +1,15 @@
 {
   "name": "@gateway-fm/protocol-kit",
-  "version": "6.0.3-dev.2",
+  "version": "6.0.3-dev.3",
   "description": "SDK that facilitates the interaction with Safe Smart Accounts",
   "types": "dist/src/index.d.ts",
-  "main": "dist/cjs/index.cjs",
-  "module": "dist/esm/index.mjs",
+  "main": "dist/cjs/src/index.cjs",
+  "module": "dist/esm/src/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "require": "./dist/cjs/index.cjs",
-      "import": "./dist/esm/index.mjs"
+      "require": "./dist/cjs/src/index.cjs",
+      "import": "./dist/esm/src/index.mjs"
     },
     "./test-utils": {
       "types": "./dist/test-utils/index.d.ts",
