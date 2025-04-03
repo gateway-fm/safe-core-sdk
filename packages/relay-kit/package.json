@@ -56,8 +56,16 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@gateway-fm/protocol-kit": "^6.0.2",
-    "@gateway-fm/types-kit": "^2.0.1",
+    "@safe-global/protocol-kit": "^6.0.2",
+    "@safe-global/types-kit": "^2.0.1",
     "viem": "^2.21.8"
+  },
+  "resolutions": {
+    "@safe-global/protocol-kit": "npm:@gateway-fm/protocol-kit@6.0.3-dev.0",
+    "@safe-global/api-kit": "npm:@gateway-fm/api-kit@latest",
+    "@safe-global/relay-kit": "npm:@gateway-fm/relay-kit@latest",
+    "@safe-global/sdk-starter-kit": "npm:@gateway-fm/sdk-starter-kit@latest",
+    "@safe-global/testing-kit": "npm:@gateway-fm/testing-kit@latest",
+    "@safe-global/types-kit": "npm:@gateway-fm/types-kit@latest"
   }
 }
